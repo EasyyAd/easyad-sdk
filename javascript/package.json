@@ -1,0 +1,13 @@
+{
+  "name": "@easyad/bot-sdk",
+  "version": "1.0.0",
+  "description": "Affichez des publicités EasyAd dans votre bot Telegram et soyez rémunéré.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": { ".": "./src/index.js" },
+  "files": ["src", "README.md"],
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test" },
+  "keywords": ["telegram", "bot", "ads", "monetization", "easyad"],
+  "license": "MIT"
+}
