@@ -9,7 +9,7 @@ from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from easyad import Ad, EasyAd, EasyAdError, hash_user_id  # noqa: E402
+from easyyad import Ad, EasyAd, EasyAdError, hash_user_id  # noqa: E402
 
 AD_PAYLOAD = {
     "ad": {

@@ -1,15 +1,15 @@
-# @easyad/bot-sdk
+# @easyyad/bot-sdk
 
 Affichez des publicités EasyAd dans votre bot Telegram et touchez **50 %** de ce que l'annonceur paie.
 
 ```bash
-npm install @easyad/bot-sdk
+npm install @easyyad/bot-sdk
 ```
 
 ## En trois lignes
 
 ```js
-import { EasyAd } from '@easyad/bot-sdk';
+import { EasyAd } from '@easyyad/bot-sdk';
 
 const easyad = new EasyAd({ apiKey: process.env.EASYAD_API_KEY });
 ```

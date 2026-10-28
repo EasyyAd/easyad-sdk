@@ -1,5 +1,5 @@
 {
-  "name": "@easyad/bot-sdk",
+  "name": "@easyyad/bot-sdk",
   "version": "1.0.0",
   "description": "Affichez des publicités EasyAd dans votre bot Telegram et soyez rémunéré.",
   "type": "module",

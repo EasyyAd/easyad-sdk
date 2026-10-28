@@ -4,8 +4,8 @@ Deux bibliothèques pour afficher des publicités EasyAd dans un bot et être r�
 
 | Dossier | Paquet | Pour qui |
 |---|---|---|
-| `javascript/` | `@easyad/bot-sdk` | Node 18+, grammY, Telegraf, telegram-bot-api |
-| `python/` | `easyad` | Python 3.9+, pyTelegramBotAPI, aiogram, python-telegram-bot |
+| `javascript/` | `@easyyad/bot-sdk` | Node 18+, grammY, Telegraf, telegram-bot-api |
+| `python/` | `easyyad` | Python 3.9+, pyTelegramBotAPI, aiogram, python-telegram-bot |
 
 Les deux exposent la même chose : `nextAd` / `next_ad`, `markShown` / `mark_shown`, `serve`, `health`.
 

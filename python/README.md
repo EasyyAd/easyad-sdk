@@ -1,17 +1,20 @@
-# easyad (Python)
+# easyyad (Python)
+
+> Le paquet s'appelle **easyyad**, comme le domaine : `easyad` était déjà pris sur PyPI par une
+> bibliothèque Active Directory sans rapport avec nous.
 
 Affichez des publicités EasyAd dans votre bot Telegram et touchez **50 %** de ce que l'annonceur paie.
 
 ```bash
-pip install easyad            # client synchrone, sans dépendance
-pip install easyad[async]     # ajoute httpx pour la version asynchrone
+pip install easyyad            # client synchrone, sans dépendance
+pip install easyyad[async]     # ajoute httpx pour la version asynchrone
 ```
 
 ## En trois lignes
 
 ```python
 import os
-from easyad import EasyAd
+from easyyad import EasyAd
 
 easyad = EasyAd(api_key=os.environ["EASYAD_API_KEY"])
 ```
@@ -55,7 +58,7 @@ rien ne vous est compté, et l'annonceur n'est pas facturé.
 ## Bots asynchrones (aiogram, python-telegram-bot)
 
 ```python
-from easyad import AsyncEasyAd
+from easyyad import AsyncEasyAd
 
 easyad = AsyncEasyAd(api_key=os.environ["EASYAD_API_KEY"])
 
@@ -112,11 +115,11 @@ fréquence repart de zéro à chaque changement.
 | `raise_on_error` | `False` | `True` pour gérer les exceptions vous-même. |
 | `user_salt` | la clé | Sel du hachage des identifiants. |
 
-La journalisation passe par le logger standard `easyad` :
+La journalisation passe par le logger standard `easyyad` :
 
 ```python
 import logging
-logging.getLogger("easyad").setLevel(logging.DEBUG)
+logging.getLogger("easyyad").setLevel(logging.DEBUG)
 ```
 
 ## Fréquence
