@@ -5,6 +5,11 @@
 
 Affichez des publicités EasyAd dans votre bot Telegram et touchez **50 %** de ce que l'annonceur paie.
 
+> **English** — Show EasyAd ads in your Telegram bot and earn **50%** of what advertisers pay.
+> `pip install easyyad` (or `easyyad[async]` for aiogram), create `EasyAd(api_key=...)`, then call
+> `next_ad(...)` and `mark_shown(...)` after your bot has answered. Python 3.9+, no required dependency.
+> Full documentation: https://easyyad.com/docs
+
 ```bash
 pip install easyyad            # client synchrone, sans dépendance
 pip install easyyad[async]     # ajoute httpx pour la version asynchrone

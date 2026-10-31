@@ -2,6 +2,11 @@
 
 Affichez des publicités EasyAd dans votre bot Telegram et touchez **50 %** de ce que l'annonceur paie.
 
+> **English** — Show EasyAd ads in your Telegram bot and earn **50%** of what advertisers pay.
+> `npm install @easyyad/bot-sdk`, create `new EasyAd({ apiKey })`, then call `easyad.serve({ userId, locale, send })`
+> after your bot has answered. Works with ESM (`import`) and CommonJS (`require`), Node 18+. TypeScript types included.
+> Full documentation: https://easyyad.com/docs
+
 ```bash
 npm install @easyyad/bot-sdk
 ```

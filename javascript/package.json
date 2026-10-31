@@ -1,13 +1,31 @@
 {
   "name": "@easyyad/bot-sdk",
   "version": "1.0.0",
-  "description": "Affichez des publicités EasyAd dans votre bot Telegram et soyez rémunéré.",
+  "description": "Show EasyAd ads in your Telegram bot and earn 50% of what advertisers pay. / Affichez des publicités EasyAd dans votre bot Telegram et soyez rémunéré.",
   "type": "module",
-  "main": "src/index.js",
-  "exports": { ".": "./src/index.js" },
-  "files": ["src", "README.md"],
+  "main": "./dist/index.cjs",
+  "module": "./src/index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./src/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["src", "dist", "index.d.ts", "README.md", "LICENSE"],
+  "sideEffects": false,
   "engines": { "node": ">=18" },
-  "scripts": { "test": "node --test" },
-  "keywords": ["telegram", "bot", "ads", "monetization", "easyad"],
-  "license": "MIT"
+  "scripts": {
+    "build": "node scripts/build-cjs.mjs",
+    "test": "node scripts/build-cjs.mjs && node --test",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": ["telegram", "telegram-bot", "bot", "ads", "advertising", "monetization", "grammy", "telegraf", "easyad"],
+  "homepage": "https://easyyad.com/docs",
+  "bugs": { "email": "support@easyyad.com" },
+  "author": "EasyAd <support@easyyad.com> (https://easyyad.com)",
+  "license": "MIT",
+  "publishConfig": { "access": "public" }
 }
