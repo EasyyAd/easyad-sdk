@@ -1,0 +1,7 @@
+node_modules/
+__pycache__/
+javascript/dist/
+python/dist/
+python/build/
+*.egg-info/
+.npmrc-tmp

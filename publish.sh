@@ -1,5 +1,6 @@
 #!/bin/bash
-# Publie les deux SDK depuis le serveur (Termius, en root) :
+# Solution de repli MANUELLE : la publication normale passe par GitHub Actions (.github/workflows/publish.yml,
+# déclenchée par « git tag vX.Y.Z && git push --tags »). Depuis le serveur (Termius, en root) :
 #   bash /root/easyad-sdk/publish.sh npm      → @easyyad/bot-sdk sur npm
 #   bash /root/easyad-sdk/publish.sh pypi     → easyyad sur PyPI
 # Les identifiants ne sont jamais écrits dans ce dossier : ils sont demandés, puis oubliés.

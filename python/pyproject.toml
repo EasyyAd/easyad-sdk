@@ -1,38 +1,32 @@
-[project]
-name = "easyyad"
-version = "1.0.0"
-description = "Show EasyAd ads in your Telegram bot and earn 50% of what advertisers pay."
-readme = "README.md"
-requires-python = ">=3.9"
-license = { text = "MIT" }
-authors = [{ name = "EasyAd", email = "support@easyyad.com" }]
-keywords = ["telegram", "telegram-bot", "bot", "ads", "advertising", "monetization", "aiogram", "easyad"]
-classifiers = [
-  "Development Status :: 5 - Production/Stable",
-  "Intended Audience :: Developers",
-  "License :: OSI Approved :: MIT License",
-  "Operating System :: OS Independent",
-  "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3 :: Only",
-  "Framework :: AsyncIO",
-  "Topic :: Communications :: Chat",
-  "Typing :: Typed",
-]
-
-[project.optional-dependencies]
-async = ["httpx>=0.27"]
-
-[project.urls]
-Homepage = "https://easyyad.com"
-Documentation = "https://easyyad.com/docs"
-
 [build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
+[project]
+name = "easyyad"
+version = "1.0.0"
+description = "Show EasyAd ads in your Telegram bot and earn 50% of what advertisers pay. / Affichez des publicités EasyAd dans votre bot Telegram et soyez rémunéré."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "EasyAd", email = "support@easyyad.com" }]
+keywords = ["telegram", "telegram-bot", "bot", "ads", "advertising", "monetization", "aiogram", "pytelegrambotapi", "easyad"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Developers",
+  "Topic :: Communications :: Chat",
+]
+
+[project.urls]
+Documentation = "https://easyyad.com/docs/bots"
+Homepage = "https://easyyad.com"
+
+[project.optional-dependencies]
+async = ["httpx>=0.24"]
+
 [tool.setuptools]
 packages = ["easyyad"]
-license-files = ["LICENSE"]
 
 [tool.setuptools.package-data]
 easyyad = ["py.typed"]

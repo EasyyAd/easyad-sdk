@@ -31,3 +31,27 @@ cd python && python -m unittest discover -s tests
 ```
 
 Aucun test ne touche le réseau : le transport est remplacé.
+
+## Publication
+
+Elle est automatique : poussez une étiquette de version et GitHub Actions teste puis publie
+les deux paquets (une version déjà en ligne est sautée).
+
+```bash
+# après avoir monté la version dans javascript/package.json,
+# python/pyproject.toml et python/easyyad/__init__.py :
+git tag v1.0.1
+git push --tags
+```
+
+À configurer une seule fois sur le dépôt GitHub :
+
+1. **npm** — créez l'organisation `easyyad` sur npmjs.com (le paquet est `@easyyad/bot-sdk`),
+   générez un jeton « Granular Access Token » limité à ce paquet avec le droit *Read and write*,
+   et mettez-le dans *Settings → Secrets and variables → Actions* sous le nom `NPM_TOKEN`.
+2. **PyPI** — aucun jeton : sur pypi.org → *Your account → Publishing → Add a pending publisher*,
+   déclarez le projet `easyyad`, ce dépôt, le fichier `publish.yml` et l'environnement `pypi`.
+
+Le dépôt peut être public sans crainte : licence MIT, aucun secret dedans — les jetons vivent
+dans les secrets GitHub, jamais dans le code. `publish.sh` reste une solution de repli manuelle
+depuis le serveur.
