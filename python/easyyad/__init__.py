@@ -9,5 +9,5 @@ Documentation : https://easyyad.com/docs/bots
 
 from .client import Ad, AsyncEasyAd, EasyAd, EasyAdError, hash_user_id
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __all__ = ["Ad", "AsyncEasyAd", "EasyAd", "EasyAdError", "hash_user_id", "__version__"]

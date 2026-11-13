@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "easyyad"
-version = "1.0.0"
+version = "1.0.1"
 description = "Show EasyAd ads in your Telegram bot and earn 50% of what advertisers pay. / Affichez des publicités EasyAd dans votre bot Telegram et soyez rémunéré."
 readme = "README.md"
 license = { text = "MIT" }

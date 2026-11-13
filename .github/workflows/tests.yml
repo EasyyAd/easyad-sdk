@@ -1,4 +1,4 @@
-# Tests des deux SDK à chaque poussée et chaque pull request.
+# Testing of both SDKs with each push and each pull request.
 name: Tests
 on:
   push:
